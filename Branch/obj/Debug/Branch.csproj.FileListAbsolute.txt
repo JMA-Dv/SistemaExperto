@@ -1,0 +1,10 @@
+C:\Users\CLARKE\source\repos\Branch\Branch\bin\Debug\Branch.exe.config
+C:\Users\CLARKE\source\repos\Branch\Branch\bin\Debug\Branch.exe
+C:\Users\CLARKE\source\repos\Branch\Branch\bin\Debug\Branch.pdb
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.csprojAssemblyReference.cache
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.Home.resources
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.Properties.Resources.resources
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.csproj.GenerateResource.cache
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.csproj.CopyComplete
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.exe
+C:\Users\CLARKE\source\repos\Branch\Branch\obj\Debug\Branch.pdb
