@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="SwiPlCs, Version=1.1.60301.0, Culture=neutral, PublicKeyToken=03ea137181587c56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\SwiPlCs.dll</HintPath>
@@ -99,6 +102,9 @@
     <Folder Include="Models\" />
     <Folder Include="Resources\" />
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

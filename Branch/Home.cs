@@ -14,6 +14,8 @@ namespace Branch
 {
     public partial class Home : Form
     {
+
+        int contador = 0;
         public Home()
         {
             InitializeComponent();
@@ -89,355 +91,616 @@ namespace Branch
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbfundamentos.Checked == true)
+            if (contador < 8)
             {
-                cbfundamentos.BackColor = Color.FromArgb(255, 140, 0);
+                if (cbfundamentos.Checked == true)
+                {
+                    contador++;
+                    cbfundamentos.BackColor = Color.FromArgb(255, 140, 0);
+                }
+                else
+                {
+                    cbfundamentos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbfundamentos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CheckBox8_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbConmutacion.Checked == true)
+            if (contador < 8)
             {
-                cbConmutacion.BackColor = Color.FromArgb(124, 252, 0);
+                if (cbConmutacion.Checked == true)
+                {
+                    contador++;
+                    cbConmutacion.BackColor = Color.FromArgb(124, 252, 0);
+                }
+                else
+                {
+                    cbConmutacion.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbConmutacion.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbLenjuages_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbLenjuages.Checked == true)
+            if (contador < 8)
             {
-                cbLenjuages.BackColor = Color.FromArgb(255, 0, 205);
+                if (cbLenjuages.Checked == true)
+                {
+                    contador++;
+                    cbLenjuages.BackColor = Color.FromArgb(255, 0, 205);
+                }
+                else
+                {
+                    cbLenjuages.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbLenjuages.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbProlog_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbProlog.Checked == true)
+            if (contador < 8)
             {
-                cbProlog.BackColor = Color.FromArgb(255, 140, 0);
+                if (cbProlog.Checked == true)
+                {
+                    contador++;
+                    cbProlog.BackColor = Color.FromArgb(255, 140, 0);
+                }
+                else
+                {
+                    cbProlog.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbProlog.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbArquitectura_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbArquitectura.Checked == true)
+            if (contador < 8)
             {
-                cbArquitectura.BackColor = Color.FromArgb(123, 104, 238);
+                if (cbArquitectura.Checked == true)
+                {
+                    contador++;
+                    cbArquitectura.BackColor = Color.FromArgb(123, 104, 238);
+                }
+                else
+                {
+                    cbArquitectura.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbArquitectura.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbMatDiscretas_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbMatDiscretas.Checked == true)
+            if (contador < 8)
             {
-                cbMatDiscretas.BackColor = Color.FromArgb(147, 112, 219);
+                if (cbMatDiscretas.Checked == true)
+                {
+                    contador++;
+                    cbMatDiscretas.BackColor = Color.FromArgb(147, 112, 219);
+                }
+                else
+                {
+                    cbMatDiscretas.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbMatDiscretas.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbTopicos_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbTopicos.Checked == true)
+            if (contador < 8)
             {
-                cbTopicos.BackColor = Color.FromArgb(152, 251, 152);
+                if (cbTopicos.Checked == true)
+                {
+                    contador++;
+                    cbTopicos.BackColor = Color.FromArgb(152, 251, 152);
+                }
+                else
+                {
+                    cbTopicos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbTopicos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CdEstructuradeDatos_CheckedChanged(object sender, EventArgs e)
         {
-            if (cdEstructuradeDatos.Checked == true)
+            if (contador < 8)
             {
-                cdEstructuradeDatos.BackColor = Color.FromArgb(102, 205, 170);
+                if (cdEstructuradeDatos.Checked == true)
+                {
+                    contador++;
+                    cdEstructuradeDatos.BackColor = Color.FromArgb(102, 205, 170);
+                }
+                else
+                {
+                    cdEstructuradeDatos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cdEstructuradeDatos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbSistemasOperativos_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbSistemasOperativos.Checked == true)
+            if (contador < 8)
             {
-                cbSistemasOperativos.BackColor = Color.FromArgb(25, 207, 73);
+                if (cbSistemasOperativos.Checked == true)
+                {
+                    contador++;
+                    cbSistemasOperativos.BackColor = Color.FromArgb(25, 207, 73);
+                }
+                else
+                {
+                    cbSistemasOperativos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbSistemasOperativos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbRedes_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbRedes.Checked == true)
+            if (contador < 8)
             {
-                cbRedes.BackColor = Color.FromArgb(218, 165, 32);
+                if (cbRedes.Checked == true)
+                {
+                    contador++;
+                    cbRedes.BackColor = Color.FromArgb(218, 165, 32);
+                }
+                else
+                {
+                    cbRedes.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbRedes.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbMetNumericos_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbMetNumericos.Checked == true)
+            if (contador < 8)
             {
-                cbMetNumericos.BackColor = Color.FromArgb(255, 127, 80);
+                if (cbMetNumericos.Checked == true)
+                {
+                    contador++;
+                    cbMetNumericos.BackColor = Color.FromArgb(255, 127, 80);
+                }
+                else
+                {
+                    cbMetNumericos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbMetNumericos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CheckBox5_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox5.Checked == true)
+            if (contador < 8)
             {
-                checkBox5.BackColor = Color.FromArgb(188, 143, 143);
+                if (checkBox5.Checked == true)
+                {
+                    contador++;
+                    checkBox5.BackColor = Color.FromArgb(188, 143, 143);
+                }
+                else
+                {
+                    checkBox5.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                checkBox5.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbSimulacion_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbSimulacion.Checked == true)
+            if (contador < 8)
             {
-                cbSimulacion.BackColor = Color.FromArgb(244, 164, 96);
+                if (cbSimulacion.Checked == true)
+                {
+                    contador++;
+                    cbSimulacion.BackColor = Color.FromArgb(244, 164, 96);
+                }
+                else
+                {
+                    cbSimulacion.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbSimulacion.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbBD_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbBD.Checked == true)
+            if (contador < 8)
             {
-                cbBD.BackColor = Color.FromArgb(30, 155, 255);
+                if (cbBD.Checked == true)
+                {
+                    contador++;
+                    cbBD.BackColor = Color.FromArgb(30, 155, 255);
+                }
+                else
+                {
+                    cbBD.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbBD.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbPrincipiosElectricos_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbPrincipiosElectricos.Checked == true)
+            if (contador < 8)
             {
-                cbPrincipiosElectricos.BackColor = Color.FromArgb(60, 179, 113);
+                if (cbPrincipiosElectricos.Checked == true)
+                {
+                    contador++;
+                    cbPrincipiosElectricos.BackColor = Color.FromArgb(60, 179, 113);
+                }
+                else
+                {
+                    cbPrincipiosElectricos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbPrincipiosElectricos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbGPS_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbGPS.Checked == true)
+            if (contador < 8)
             {
-                cbGPS.BackColor = Color.FromArgb(255, 190, 0);
+                if (cbGPS.Checked == true)
+                {
+                    contador++;
+                    cbGPS.BackColor = Color.FromArgb(255, 190, 0);
+                }
+                else
+                {
+                    cbGPS.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbGPS.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbSoftware_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbSoftware.Checked == true)
+            if (contador < 8)
             {
-                cbSoftware.BackColor = Color.FromArgb(238, 130, 238);
+                if (cbSoftware.Checked == true)
+                {
+                    contador++;
+                    cbSoftware.BackColor = Color.FromArgb(238, 130, 238);
+                }
+                else
+                {
+                    cbSoftware.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbSoftware.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbTelecom_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbTelecom.Checked == true)
+            if (contador < 8)
             {
-                cbTelecom.BackColor = Color.FromArgb(240, 128, 128);
+                if (cbTelecom.Checked == true)
+                {
+                    contador++;
+                    cbTelecom.BackColor = Color.FromArgb(240, 128, 128);
+                }
+                else
+                {
+                    cbTelecom.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbTelecom.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CheckBox6_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox6.Checked == true)
+            if (contador < 8)
             {
-                checkBox6.BackColor = Color.FromArgb(255, 160, 122);
+                if (checkBox6.Checked == true)
+                {
+                    contador++;
+                    checkBox6.BackColor = Color.FromArgb(255, 160, 122);
+                }
+                else
+                {
+                    checkBox6.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                checkBox6.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbSistemasProgramables_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbSistemasProgramables.Checked == true)
+            if (contador < 8)
             {
-                cbSistemasProgramables.BackColor = Color.FromArgb(216, 11, 216);
+                if (cbSistemasProgramables.Checked == true)
+                {
+                    contador++;
+                    cbSistemasProgramables.BackColor = Color.FromArgb(216, 11, 216);
+                }
+                else
+                {
+                    cbSistemasProgramables.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbSistemasProgramables.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbLenguajesAtomatas_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbLenguajesAtomatas.Checked == true)
+            if (contador < 8)
             {
-                cbLenguajesAtomatas.BackColor = Color.FromArgb(10, 255, 47);
+                if (cbLenguajesAtomatas.Checked == true)
+                {
+                    contador++;
+                    cbLenguajesAtomatas.BackColor = Color.FromArgb(10, 255, 47);
+                }
+                else
+                {
+                    cbLenguajesAtomatas.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbLenguajesAtomatas.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbProgramacionBD_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbProgramacionBD.Checked == true)
+            if (contador < 8)
             {
-                cbProgramacionBD.BackColor = Color.FromArgb(152, 251, 12);
+                if (cbProgramacionBD.Checked == true)
+                {
+                    contador++;
+                    cbProgramacionBD.BackColor = Color.FromArgb(152, 251, 12);
+                }
+                else
+                {
+                    cbProgramacionBD.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbProgramacionBD.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbAdminRedes_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbAdminRedes.Checked == true)
+            if (contador < 8)
             {
-                cbAdminRedes.BackColor = Color.FromArgb(0, 255, 255);
+                if (cbAdminRedes.Checked == true)
+                {
+                    contador++;
+                    cbAdminRedes.BackColor = Color.FromArgb(0, 255, 255);
+                }
+                else
+                {
+                    cbAdminRedes.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbAdminRedes.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbGestores_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbGestores.Checked == true)
+            if (contador < 8)
             {
-                cbGestores.BackColor = Color.FromArgb(0, 206, 209);
+                if (cbGestores.Checked == true)
+                {
+                    contador++;
+                    cbGestores.BackColor = Color.FromArgb(0, 206, 209);
+                }
+                else
+                {
+                    cbGestores.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbGestores.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbIA_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbIA.Checked == true)
+            if (contador < 8)
             {
-                cbIA.BackColor = Color.FromArgb(244, 164, 96);
+                if (cbIA.Checked == true)
+                {
+                    contador++;
+                    cbIA.BackColor = Color.FromArgb(244, 164, 96);
+                }
+                else
+                {
+                    cbIA.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbIA.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbAdminServidores_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbAdminServidores.Checked == true)
+            if (contador < 8)
             {
-                cbAdminServidores.BackColor = Color.FromArgb(0, 255, 127);
+                if (cbAdminServidores.Checked == true)
+                {
+                    contador++;
+                    cbAdminServidores.BackColor = Color.FromArgb(0, 255, 127);
+                }
+                else
+                {
+                    cbAdminServidores.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbAdminServidores.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbWeb_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbWeb.Checked == true)
+            if (contador < 8)
             {
-                cbWeb.BackColor = Color.FromArgb(143, 188, 139);
+                if (cbWeb.Checked == true)
+                {
+                    contador++;
+                    cbWeb.BackColor = Color.FromArgb(143, 188, 139);
+                }
+                else
+                {
+                    cbWeb.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbWeb.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbPoo_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbPoo.Checked == true)
+            if (contador < 8)
             {
-                cbPoo.BackColor = Color.FromArgb(255, 140, 0);
+                if (cbPoo.Checked == true)
+                {
+                    contador++;
+                    cbPoo.BackColor = Color.FromArgb(255, 140, 0);
+                }
+                else
+                {
+                    cbPoo.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbPoo.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void CbDispositivos_CheckedChanged(object sender, EventArgs e)
         {
-            if (cbDispositivos.Checked == true)
+            if (contador < 8)
             {
-                cbDispositivos.BackColor = Color.FromArgb(0, 191, 255);
+                if (cbDispositivos.Checked == true)
+                {
+                    contador++;
+                    cbDispositivos.BackColor = Color.FromArgb(0, 191, 255);
+                }
+                else
+                {
+                    cbDispositivos.BackColor = Color.FromArgb(13, 21, 57);
+                }
             }
             else
             {
-                cbDispositivos.BackColor = Color.FromArgb(13, 21, 57);
+                MessageBox.Show("Haz alcanzado el número máximo de Materias Seleccionadas");
             }
+
         }
 
         private void Bresultados_Click(object sender, EventArgs e)
         {
-            
+
             Form1 res = new Form1();
             res.Show();
 
@@ -448,6 +711,11 @@ namespace Branch
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+}
 
