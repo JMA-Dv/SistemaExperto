@@ -83,11 +83,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comfortaa", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(331, 78);
+            this.label2.Location = new System.Drawing.Point(257, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(605, 33);
+            this.label2.Size = new System.Drawing.Size(711, 33);
             this.label2.TabIndex = 1;
-            this.label2.Text = "¡Estás son las carreras que se relacionan a tus gustos!";
+            this.label2.Text = "¡Estás son las materias que se relacionan a tus áreas de interes!";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label1
