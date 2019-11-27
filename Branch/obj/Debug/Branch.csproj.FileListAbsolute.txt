@@ -35,3 +35,5 @@ C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.p
 C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form2.resources
 C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form3.resources
+C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.juego.resources
+C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.winner.resources

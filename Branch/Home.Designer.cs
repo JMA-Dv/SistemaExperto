@@ -70,6 +70,7 @@
             this.bunifuElipse36 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse37 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse38 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             cerrarVentana = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(cerrarVentana)).BeginInit();
             this.BarraTitulo.SuspendLayout();
@@ -511,6 +512,11 @@
             this.bunifuElipse38.ElipseRadius = 10;
             this.bunifuElipse38.TargetControl = this;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -577,6 +583,7 @@
         private Bunifu.Framework.UI.BunifuCards documentadorCard;
         private Bunifu.Framework.UI.BunifuCards adminbdCard;
         private Bunifu.Framework.UI.BunifuCards calidadCard;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 
