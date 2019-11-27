@@ -38,14 +38,27 @@ namespace Branch
             {
                 Environment.SetEnvironmentVariable("SWI_HOME_DIR", @"C:\Program Files (x86)\pl");
                 Environment.SetEnvironmentVariable("Path", @"C:\Program Files (x86)\pl\bin");
-                string[] data = { "-q", "-f", @"base_de_conocimiento.pl" };
+                string[] data = { "-q", "-f", @"branch.pl" };
                 PlEngine.Initialize(data);
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }
 
+        }
+        public List<String> consult(string context)
+        {
+            List<String> allElements = new List<String>();
+            PlQuery generalConsult = new PlQuery(context);
+            foreach (PlQueryVariables elements in generalConsult.SolutionVariables)
+            {
+                allElements.Add(elements["B"].ToString());
+                allElements.Add(elements["C"].ToString());
+
+            }
+
+            return allElements;
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
@@ -74,26 +87,6 @@ namespace Branch
             extenderVentana.Visible = true;
         }
 
-        private void GroupMaterias_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BarraContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-      
-        private void Bresultados_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -101,30 +94,72 @@ namespace Branch
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+        private void calidadCard_Click(object sender, EventArgs e)
         {
+            List<String> li = consult("locacion(analista,B,C)");
+            foreach (string el in li)
+                Console.WriteLine(el);
 
-        }
-
-        private void PictureBox12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BunifuCards2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BunifuCards1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void BunifuCards1_Click(object sender, EventArgs e)
-        {
             Form1 res = new Form1();
-            res.Show();
+            res.ShowDialog();
+        }
+
+        private void documentadorCard_Click(object sender, EventArgs e)
+        {
+            List<String> documentadorList = consult("locacion(documentador,B,C)");
+
+        }
+
+        private void backendCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(backend,B,C)");
+
+        }
+
+        private void analistaCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(analista,B,C)");
+
+        }
+
+        private void abdCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(abd,B,C)");
+        }
+
+        private void testingCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(testing,B,C)");
+        }
+
+        private void scumMCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(scrum,B,C)");
+        }
+
+        private void reporteadorCards_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(reporteador,B,C)");
+        }
+
+        private void redesCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(redes,B,C)");
+        }
+
+        private void projectOwnerCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(owner,B,C)");
+        }
+
+        private void frontCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(frontend,B,C)");
+        }
+
+        private void projectManagerCard_Click(object sender, EventArgs e)
+        {
+            List<String> backendList = consult("locacion(manager,B,C)");
         }
     }
 }
