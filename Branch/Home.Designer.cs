@@ -38,6 +38,18 @@
             this.barraIzquierda = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BarraContenedor = new System.Windows.Forms.Panel();
+            this.projectManagerCard = new Bunifu.Framework.UI.BunifuCards();
+            this.frontendCard = new Bunifu.Framework.UI.BunifuCards();
+            this.reportadorCard = new Bunifu.Framework.UI.BunifuCards();
+            this.projectOwnerCard = new Bunifu.Framework.UI.BunifuCards();
+            this.analistaCard = new Bunifu.Framework.UI.BunifuCards();
+            this.scrumMasterCard = new Bunifu.Framework.UI.BunifuCards();
+            this.backendCard = new Bunifu.Framework.UI.BunifuCards();
+            this.redesDeComputadorasCard = new Bunifu.Framework.UI.BunifuCards();
+            this.testingCard = new Bunifu.Framework.UI.BunifuCards();
+            this.documentadorCard = new Bunifu.Framework.UI.BunifuCards();
+            this.adminbdCard = new Bunifu.Framework.UI.BunifuCards();
+            this.calidadCard = new Bunifu.Framework.UI.BunifuCards();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuElipse20 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse21 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -58,18 +70,6 @@
             this.bunifuElipse36 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse37 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse38 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards6 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards7 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards8 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards9 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards10 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards11 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards12 = new Bunifu.Framework.UI.BunifuCards();
             cerrarVentana = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(cerrarVentana)).BeginInit();
             this.BarraTitulo.SuspendLayout();
@@ -84,7 +84,7 @@
             // 
             cerrarVentana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             cerrarVentana.Image = ((System.Drawing.Image)(resources.GetObject("cerrarVentana.Image")));
-            cerrarVentana.Location = new System.Drawing.Point(1303, 11);
+            cerrarVentana.Location = new System.Drawing.Point(1300, 11);
             cerrarVentana.Name = "cerrarVentana";
             cerrarVentana.Size = new System.Drawing.Size(25, 25);
             cerrarVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +102,7 @@
             this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(1337, 44);
+            this.BarraTitulo.Size = new System.Drawing.Size(1334, 44);
             this.BarraTitulo.TabIndex = 6;
             this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
@@ -122,7 +122,7 @@
             // 
             this.minimizarventana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minimizarventana.Image = ((System.Drawing.Image)(resources.GetObject("minimizarventana.Image")));
-            this.minimizarventana.Location = new System.Drawing.Point(1241, 11);
+            this.minimizarventana.Location = new System.Drawing.Point(1238, 11);
             this.minimizarventana.Name = "minimizarventana";
             this.minimizarventana.Size = new System.Drawing.Size(25, 25);
             this.minimizarventana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,7 +134,7 @@
             // 
             this.extenderVentana.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.extenderVentana.Image = ((System.Drawing.Image)(resources.GetObject("extenderVentana.Image")));
-            this.extenderVentana.Location = new System.Drawing.Point(1272, 11);
+            this.extenderVentana.Location = new System.Drawing.Point(1269, 11);
             this.extenderVentana.Name = "extenderVentana";
             this.extenderVentana.Size = new System.Drawing.Size(25, 25);
             this.extenderVentana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +149,7 @@
             this.barraIzquierda.Dock = System.Windows.Forms.DockStyle.Left;
             this.barraIzquierda.Location = new System.Drawing.Point(0, 44);
             this.barraIzquierda.Name = "barraIzquierda";
-            this.barraIzquierda.Size = new System.Drawing.Size(200, 608);
+            this.barraIzquierda.Size = new System.Drawing.Size(200, 611);
             this.barraIzquierda.TabIndex = 7;
             // 
             // pictureBox1
@@ -167,27 +167,243 @@
             this.BarraContenedor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BarraContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(244)))));
             this.BarraContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BarraContenedor.Controls.Add(this.bunifuCards10);
-            this.BarraContenedor.Controls.Add(this.bunifuCards7);
-            this.BarraContenedor.Controls.Add(this.bunifuCards11);
-            this.BarraContenedor.Controls.Add(this.bunifuCards4);
-            this.BarraContenedor.Controls.Add(this.bunifuCards12);
-            this.BarraContenedor.Controls.Add(this.bunifuCards8);
-            this.BarraContenedor.Controls.Add(this.bunifuCards9);
-            this.BarraContenedor.Controls.Add(this.bunifuCards3);
-            this.BarraContenedor.Controls.Add(this.bunifuCards5);
-            this.BarraContenedor.Controls.Add(this.bunifuCards6);
-            this.BarraContenedor.Controls.Add(this.bunifuCards2);
-            this.BarraContenedor.Controls.Add(this.bunifuCards1);
+            this.BarraContenedor.Controls.Add(this.projectManagerCard);
+            this.BarraContenedor.Controls.Add(this.frontendCard);
+            this.BarraContenedor.Controls.Add(this.reportadorCard);
+            this.BarraContenedor.Controls.Add(this.projectOwnerCard);
+            this.BarraContenedor.Controls.Add(this.analistaCard);
+            this.BarraContenedor.Controls.Add(this.scrumMasterCard);
+            this.BarraContenedor.Controls.Add(this.backendCard);
+            this.BarraContenedor.Controls.Add(this.redesDeComputadorasCard);
+            this.BarraContenedor.Controls.Add(this.testingCard);
+            this.BarraContenedor.Controls.Add(this.documentadorCard);
+            this.BarraContenedor.Controls.Add(this.adminbdCard);
+            this.BarraContenedor.Controls.Add(this.calidadCard);
             this.BarraContenedor.Controls.Add(this.label1);
             this.BarraContenedor.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BarraContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BarraContenedor.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BarraContenedor.Location = new System.Drawing.Point(200, 44);
             this.BarraContenedor.Name = "BarraContenedor";
-            this.BarraContenedor.Size = new System.Drawing.Size(1137, 608);
+            this.BarraContenedor.Size = new System.Drawing.Size(1134, 611);
             this.BarraContenedor.TabIndex = 8;
             this.BarraContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraContenedor_Paint);
+            // 
+            // projectManagerCard
+            // 
+            this.projectManagerCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.projectManagerCard.BackColor = System.Drawing.Color.White;
+            this.projectManagerCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("projectManagerCard.BackgroundImage")));
+            this.projectManagerCard.BorderRadius = 25;
+            this.projectManagerCard.BottomSahddow = true;
+            this.projectManagerCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.projectManagerCard.LeftSahddow = false;
+            this.projectManagerCard.Location = new System.Drawing.Point(862, 418);
+            this.projectManagerCard.Name = "projectManagerCard";
+            this.projectManagerCard.RightSahddow = true;
+            this.projectManagerCard.ShadowDepth = 20;
+            this.projectManagerCard.Size = new System.Drawing.Size(232, 138);
+            this.projectManagerCard.TabIndex = 34;
+            this.projectManagerCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ProjectManagerCard_Paint);
+            // 
+            // frontendCard
+            // 
+            this.frontendCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.frontendCard.BackColor = System.Drawing.Color.White;
+            this.frontendCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("frontendCard.BackgroundImage")));
+            this.frontendCard.BorderRadius = 25;
+            this.frontendCard.BottomSahddow = true;
+            this.frontendCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.frontendCard.LeftSahddow = false;
+            this.frontendCard.Location = new System.Drawing.Point(583, 418);
+            this.frontendCard.Name = "frontendCard";
+            this.frontendCard.RightSahddow = true;
+            this.frontendCard.ShadowDepth = 20;
+            this.frontendCard.Size = new System.Drawing.Size(232, 138);
+            this.frontendCard.TabIndex = 34;
+            this.frontendCard.Paint += new System.Windows.Forms.PaintEventHandler(this.FrontendCard_Paint);
+            // 
+            // reportadorCard
+            // 
+            this.reportadorCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportadorCard.BackColor = System.Drawing.Color.White;
+            this.reportadorCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reportadorCard.BackgroundImage")));
+            this.reportadorCard.BorderRadius = 25;
+            this.reportadorCard.BottomSahddow = true;
+            this.reportadorCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.reportadorCard.LeftSahddow = false;
+            this.reportadorCard.Location = new System.Drawing.Point(862, 251);
+            this.reportadorCard.Name = "reportadorCard";
+            this.reportadorCard.RightSahddow = true;
+            this.reportadorCard.ShadowDepth = 20;
+            this.reportadorCard.Size = new System.Drawing.Size(232, 138);
+            this.reportadorCard.TabIndex = 33;
+            this.reportadorCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ReportadorCard_Paint);
+            // 
+            // projectOwnerCard
+            // 
+            this.projectOwnerCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.projectOwnerCard.BackColor = System.Drawing.Color.White;
+            this.projectOwnerCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("projectOwnerCard.BackgroundImage")));
+            this.projectOwnerCard.BorderRadius = 25;
+            this.projectOwnerCard.BottomSahddow = true;
+            this.projectOwnerCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.projectOwnerCard.LeftSahddow = false;
+            this.projectOwnerCard.Location = new System.Drawing.Point(305, 418);
+            this.projectOwnerCard.Name = "projectOwnerCard";
+            this.projectOwnerCard.RightSahddow = true;
+            this.projectOwnerCard.ShadowDepth = 20;
+            this.projectOwnerCard.Size = new System.Drawing.Size(232, 138);
+            this.projectOwnerCard.TabIndex = 34;
+            this.projectOwnerCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ProjectOwnerCard_Paint);
+            // 
+            // analistaCard
+            // 
+            this.analistaCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.analistaCard.BackColor = System.Drawing.Color.White;
+            this.analistaCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("analistaCard.BackgroundImage")));
+            this.analistaCard.BorderRadius = 25;
+            this.analistaCard.BottomSahddow = true;
+            this.analistaCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.analistaCard.LeftSahddow = false;
+            this.analistaCard.Location = new System.Drawing.Point(862, 82);
+            this.analistaCard.Name = "analistaCard";
+            this.analistaCard.RightSahddow = true;
+            this.analistaCard.ShadowDepth = 20;
+            this.analistaCard.Size = new System.Drawing.Size(232, 138);
+            this.analistaCard.TabIndex = 32;
+            this.analistaCard.Paint += new System.Windows.Forms.PaintEventHandler(this.AnalistaCard_Paint);
+            // 
+            // scrumMasterCard
+            // 
+            this.scrumMasterCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.scrumMasterCard.BackColor = System.Drawing.Color.White;
+            this.scrumMasterCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("scrumMasterCard.BackgroundImage")));
+            this.scrumMasterCard.BorderRadius = 25;
+            this.scrumMasterCard.BottomSahddow = true;
+            this.scrumMasterCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.scrumMasterCard.LeftSahddow = false;
+            this.scrumMasterCard.Location = new System.Drawing.Point(583, 251);
+            this.scrumMasterCard.Name = "scrumMasterCard";
+            this.scrumMasterCard.RightSahddow = true;
+            this.scrumMasterCard.ShadowDepth = 20;
+            this.scrumMasterCard.Size = new System.Drawing.Size(232, 138);
+            this.scrumMasterCard.TabIndex = 33;
+            this.scrumMasterCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ScrumMasterCard_Paint);
+            // 
+            // backendCard
+            // 
+            this.backendCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backendCard.BackColor = System.Drawing.Color.White;
+            this.backendCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backendCard.BackgroundImage")));
+            this.backendCard.BorderRadius = 25;
+            this.backendCard.BottomSahddow = true;
+            this.backendCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.backendCard.LeftSahddow = false;
+            this.backendCard.Location = new System.Drawing.Point(583, 82);
+            this.backendCard.Name = "backendCard";
+            this.backendCard.RightSahddow = true;
+            this.backendCard.ShadowDepth = 20;
+            this.backendCard.Size = new System.Drawing.Size(232, 138);
+            this.backendCard.TabIndex = 32;
+            this.backendCard.Paint += new System.Windows.Forms.PaintEventHandler(this.BackendCard_Paint);
+            // 
+            // redesDeComputadorasCard
+            // 
+            this.redesDeComputadorasCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.redesDeComputadorasCard.BackColor = System.Drawing.Color.White;
+            this.redesDeComputadorasCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("redesDeComputadorasCard.BackgroundImage")));
+            this.redesDeComputadorasCard.BorderRadius = 25;
+            this.redesDeComputadorasCard.BottomSahddow = true;
+            this.redesDeComputadorasCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.redesDeComputadorasCard.LeftSahddow = false;
+            this.redesDeComputadorasCard.Location = new System.Drawing.Point(35, 418);
+            this.redesDeComputadorasCard.Name = "redesDeComputadorasCard";
+            this.redesDeComputadorasCard.RightSahddow = true;
+            this.redesDeComputadorasCard.ShadowDepth = 20;
+            this.redesDeComputadorasCard.Size = new System.Drawing.Size(232, 138);
+            this.redesDeComputadorasCard.TabIndex = 31;
+            this.redesDeComputadorasCard.Paint += new System.Windows.Forms.PaintEventHandler(this.RedesDeComputadorasCard_Paint);
+            // 
+            // testingCard
+            // 
+            this.testingCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.testingCard.BackColor = System.Drawing.Color.White;
+            this.testingCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("testingCard.BackgroundImage")));
+            this.testingCard.BorderRadius = 25;
+            this.testingCard.BottomSahddow = true;
+            this.testingCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.testingCard.LeftSahddow = false;
+            this.testingCard.Location = new System.Drawing.Point(305, 251);
+            this.testingCard.Name = "testingCard";
+            this.testingCard.RightSahddow = true;
+            this.testingCard.ShadowDepth = 20;
+            this.testingCard.Size = new System.Drawing.Size(232, 138);
+            this.testingCard.TabIndex = 33;
+            this.testingCard.Paint += new System.Windows.Forms.PaintEventHandler(this.TestingCard_Paint);
+            // 
+            // documentadorCard
+            // 
+            this.documentadorCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.documentadorCard.BackColor = System.Drawing.Color.White;
+            this.documentadorCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("documentadorCard.BackgroundImage")));
+            this.documentadorCard.BorderRadius = 25;
+            this.documentadorCard.BottomSahddow = true;
+            this.documentadorCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.documentadorCard.LeftSahddow = false;
+            this.documentadorCard.Location = new System.Drawing.Point(305, 82);
+            this.documentadorCard.Name = "documentadorCard";
+            this.documentadorCard.RightSahddow = true;
+            this.documentadorCard.ShadowDepth = 20;
+            this.documentadorCard.Size = new System.Drawing.Size(232, 138);
+            this.documentadorCard.TabIndex = 32;
+            this.documentadorCard.Paint += new System.Windows.Forms.PaintEventHandler(this.DocumentadorCard_Paint);
+            // 
+            // adminbdCard
+            // 
+            this.adminbdCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.adminbdCard.BackColor = System.Drawing.Color.White;
+            this.adminbdCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adminbdCard.BackgroundImage")));
+            this.adminbdCard.BorderRadius = 25;
+            this.adminbdCard.BottomSahddow = true;
+            this.adminbdCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.adminbdCard.LeftSahddow = false;
+            this.adminbdCard.Location = new System.Drawing.Point(35, 251);
+            this.adminbdCard.Name = "adminbdCard";
+            this.adminbdCard.RightSahddow = true;
+            this.adminbdCard.ShadowDepth = 20;
+            this.adminbdCard.Size = new System.Drawing.Size(232, 138);
+            this.adminbdCard.TabIndex = 31;
+            this.adminbdCard.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminbdCard_Paint);
+            // 
+            // calidadCard
+            // 
+            this.calidadCard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.calidadCard.BackColor = System.Drawing.Color.White;
+            this.calidadCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("calidadCard.BackgroundImage")));
+            this.calidadCard.BorderRadius = 25;
+            this.calidadCard.BottomSahddow = true;
+            this.calidadCard.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.calidadCard.LeftSahddow = false;
+            this.calidadCard.Location = new System.Drawing.Point(35, 82);
+            this.calidadCard.Name = "calidadCard";
+            this.calidadCard.RightSahddow = true;
+            this.calidadCard.ShadowDepth = 20;
+            this.calidadCard.Size = new System.Drawing.Size(232, 138);
+            this.calidadCard.TabIndex = 30;
+            this.calidadCard.Paint += new System.Windows.Forms.PaintEventHandler(this.CalidadCard_Paint);
             // 
             // label1
             // 
@@ -199,7 +415,6 @@
             this.label1.Size = new System.Drawing.Size(329, 33);
             this.label1.TabIndex = 29;
             this.label1.Text = "Selecciona la área de interes";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // bunifuElipse20
             // 
@@ -289,201 +504,19 @@
             // bunifuElipse37
             // 
             this.bunifuElipse37.ElipseRadius = 15;
+            this.bunifuElipse37.TargetControl = this;
             // 
             // bunifuElipse38
             // 
             this.bunifuElipse38.ElipseRadius = 10;
             this.bunifuElipse38.TargetControl = this;
             // 
-            // bunifuCards1
-            // 
-            this.bunifuCards1.BackColor = System.Drawing.Color.White;
-            this.bunifuCards1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards1.BackgroundImage")));
-            this.bunifuCards1.BorderRadius = 25;
-            this.bunifuCards1.BottomSahddow = true;
-            this.bunifuCards1.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards1.LeftSahddow = false;
-            this.bunifuCards1.Location = new System.Drawing.Point(35, 82);
-            this.bunifuCards1.Name = "bunifuCards1";
-            this.bunifuCards1.RightSahddow = true;
-            this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards1.TabIndex = 30;
-            this.bunifuCards1.Click += new System.EventHandler(this.BunifuCards1_Click);
-            this.bunifuCards1.Paint += new System.Windows.Forms.PaintEventHandler(this.BunifuCards1_Paint);
-            // 
-            // bunifuCards2
-            // 
-            this.bunifuCards2.BackColor = System.Drawing.Color.White;
-            this.bunifuCards2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards2.BackgroundImage")));
-            this.bunifuCards2.BorderRadius = 25;
-            this.bunifuCards2.BottomSahddow = true;
-            this.bunifuCards2.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards2.LeftSahddow = false;
-            this.bunifuCards2.Location = new System.Drawing.Point(35, 251);
-            this.bunifuCards2.Name = "bunifuCards2";
-            this.bunifuCards2.RightSahddow = true;
-            this.bunifuCards2.ShadowDepth = 20;
-            this.bunifuCards2.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards2.TabIndex = 31;
-            this.bunifuCards2.Paint += new System.Windows.Forms.PaintEventHandler(this.BunifuCards2_Paint);
-            // 
-            // bunifuCards3
-            // 
-            this.bunifuCards3.BackColor = System.Drawing.Color.White;
-            this.bunifuCards3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards3.BackgroundImage")));
-            this.bunifuCards3.BorderRadius = 25;
-            this.bunifuCards3.BottomSahddow = true;
-            this.bunifuCards3.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards3.LeftSahddow = false;
-            this.bunifuCards3.Location = new System.Drawing.Point(35, 418);
-            this.bunifuCards3.Name = "bunifuCards3";
-            this.bunifuCards3.RightSahddow = true;
-            this.bunifuCards3.ShadowDepth = 20;
-            this.bunifuCards3.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards3.TabIndex = 31;
-            // 
-            // bunifuCards4
-            // 
-            this.bunifuCards4.BackColor = System.Drawing.Color.White;
-            this.bunifuCards4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards4.BackgroundImage")));
-            this.bunifuCards4.BorderRadius = 25;
-            this.bunifuCards4.BottomSahddow = true;
-            this.bunifuCards4.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards4.LeftSahddow = false;
-            this.bunifuCards4.Location = new System.Drawing.Point(305, 418);
-            this.bunifuCards4.Name = "bunifuCards4";
-            this.bunifuCards4.RightSahddow = true;
-            this.bunifuCards4.ShadowDepth = 20;
-            this.bunifuCards4.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards4.TabIndex = 34;
-            // 
-            // bunifuCards5
-            // 
-            this.bunifuCards5.BackColor = System.Drawing.Color.White;
-            this.bunifuCards5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards5.BackgroundImage")));
-            this.bunifuCards5.BorderRadius = 25;
-            this.bunifuCards5.BottomSahddow = true;
-            this.bunifuCards5.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards5.LeftSahddow = false;
-            this.bunifuCards5.Location = new System.Drawing.Point(305, 251);
-            this.bunifuCards5.Name = "bunifuCards5";
-            this.bunifuCards5.RightSahddow = true;
-            this.bunifuCards5.ShadowDepth = 20;
-            this.bunifuCards5.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards5.TabIndex = 33;
-            // 
-            // bunifuCards6
-            // 
-            this.bunifuCards6.BackColor = System.Drawing.Color.White;
-            this.bunifuCards6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards6.BackgroundImage")));
-            this.bunifuCards6.BorderRadius = 25;
-            this.bunifuCards6.BottomSahddow = true;
-            this.bunifuCards6.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards6.LeftSahddow = false;
-            this.bunifuCards6.Location = new System.Drawing.Point(305, 82);
-            this.bunifuCards6.Name = "bunifuCards6";
-            this.bunifuCards6.RightSahddow = true;
-            this.bunifuCards6.ShadowDepth = 20;
-            this.bunifuCards6.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards6.TabIndex = 32;
-            // 
-            // bunifuCards7
-            // 
-            this.bunifuCards7.BackColor = System.Drawing.Color.White;
-            this.bunifuCards7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards7.BackgroundImage")));
-            this.bunifuCards7.BorderRadius = 25;
-            this.bunifuCards7.BottomSahddow = true;
-            this.bunifuCards7.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards7.LeftSahddow = false;
-            this.bunifuCards7.Location = new System.Drawing.Point(583, 418);
-            this.bunifuCards7.Name = "bunifuCards7";
-            this.bunifuCards7.RightSahddow = true;
-            this.bunifuCards7.ShadowDepth = 20;
-            this.bunifuCards7.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards7.TabIndex = 34;
-            // 
-            // bunifuCards8
-            // 
-            this.bunifuCards8.BackColor = System.Drawing.Color.White;
-            this.bunifuCards8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards8.BackgroundImage")));
-            this.bunifuCards8.BorderRadius = 25;
-            this.bunifuCards8.BottomSahddow = true;
-            this.bunifuCards8.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards8.LeftSahddow = false;
-            this.bunifuCards8.Location = new System.Drawing.Point(583, 251);
-            this.bunifuCards8.Name = "bunifuCards8";
-            this.bunifuCards8.RightSahddow = true;
-            this.bunifuCards8.ShadowDepth = 20;
-            this.bunifuCards8.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards8.TabIndex = 33;
-            // 
-            // bunifuCards9
-            // 
-            this.bunifuCards9.BackColor = System.Drawing.Color.White;
-            this.bunifuCards9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards9.BackgroundImage")));
-            this.bunifuCards9.BorderRadius = 25;
-            this.bunifuCards9.BottomSahddow = true;
-            this.bunifuCards9.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards9.LeftSahddow = false;
-            this.bunifuCards9.Location = new System.Drawing.Point(583, 82);
-            this.bunifuCards9.Name = "bunifuCards9";
-            this.bunifuCards9.RightSahddow = true;
-            this.bunifuCards9.ShadowDepth = 20;
-            this.bunifuCards9.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards9.TabIndex = 32;
-            // 
-            // bunifuCards10
-            // 
-            this.bunifuCards10.BackColor = System.Drawing.Color.White;
-            this.bunifuCards10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards10.BackgroundImage")));
-            this.bunifuCards10.BorderRadius = 25;
-            this.bunifuCards10.BottomSahddow = true;
-            this.bunifuCards10.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards10.LeftSahddow = false;
-            this.bunifuCards10.Location = new System.Drawing.Point(862, 418);
-            this.bunifuCards10.Name = "bunifuCards10";
-            this.bunifuCards10.RightSahddow = true;
-            this.bunifuCards10.ShadowDepth = 20;
-            this.bunifuCards10.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards10.TabIndex = 34;
-            // 
-            // bunifuCards11
-            // 
-            this.bunifuCards11.BackColor = System.Drawing.Color.White;
-            this.bunifuCards11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards11.BackgroundImage")));
-            this.bunifuCards11.BorderRadius = 25;
-            this.bunifuCards11.BottomSahddow = true;
-            this.bunifuCards11.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards11.LeftSahddow = false;
-            this.bunifuCards11.Location = new System.Drawing.Point(862, 251);
-            this.bunifuCards11.Name = "bunifuCards11";
-            this.bunifuCards11.RightSahddow = true;
-            this.bunifuCards11.ShadowDepth = 20;
-            this.bunifuCards11.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards11.TabIndex = 33;
-            // 
-            // bunifuCards12
-            // 
-            this.bunifuCards12.BackColor = System.Drawing.Color.White;
-            this.bunifuCards12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuCards12.BackgroundImage")));
-            this.bunifuCards12.BorderRadius = 25;
-            this.bunifuCards12.BottomSahddow = true;
-            this.bunifuCards12.color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCards12.LeftSahddow = false;
-            this.bunifuCards12.Location = new System.Drawing.Point(862, 82);
-            this.bunifuCards12.Name = "bunifuCards12";
-            this.bunifuCards12.RightSahddow = true;
-            this.bunifuCards12.ShadowDepth = 20;
-            this.bunifuCards12.Size = new System.Drawing.Size(235, 138);
-            this.bunifuCards12.TabIndex = 32;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1337, 652);
+            this.ClientSize = new System.Drawing.Size(1334, 655);
             this.Controls.Add(this.BarraContenedor);
             this.Controls.Add(this.barraIzquierda);
             this.Controls.Add(this.BarraTitulo);
@@ -532,18 +565,18 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse38;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards10;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards7;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards11;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards4;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards12;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards8;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards9;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards3;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards5;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards6;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards2;
-        private Bunifu.Framework.UI.BunifuCards bunifuCards1;
+        private Bunifu.Framework.UI.BunifuCards projectManagerCard;
+        private Bunifu.Framework.UI.BunifuCards frontendCard;
+        private Bunifu.Framework.UI.BunifuCards reportadorCard;
+        private Bunifu.Framework.UI.BunifuCards projectOwnerCard;
+        private Bunifu.Framework.UI.BunifuCards analistaCard;
+        private Bunifu.Framework.UI.BunifuCards scrumMasterCard;
+        private Bunifu.Framework.UI.BunifuCards backendCard;
+        private Bunifu.Framework.UI.BunifuCards redesDeComputadorasCard;
+        private Bunifu.Framework.UI.BunifuCards testingCard;
+        private Bunifu.Framework.UI.BunifuCards documentadorCard;
+        private Bunifu.Framework.UI.BunifuCards adminbdCard;
+        private Bunifu.Framework.UI.BunifuCards calidadCard;
     }
 }
 

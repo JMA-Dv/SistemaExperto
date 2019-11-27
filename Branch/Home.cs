@@ -101,30 +101,65 @@ namespace Branch
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void Label1_Click(object sender, EventArgs e)
+      
+        private void CalidadCard_Paint(object sender, PaintEventArgs e)
         {
-
+     
         }
 
-        private void PictureBox12_Click(object sender, EventArgs e)
+        private void DocumentadorCard_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
 
-        private void BunifuCards2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void BunifuCards1_Paint(object sender, PaintEventArgs e)
+        private void BackendCard_Paint(object sender, PaintEventArgs e)
         {
             
         }
 
-        private void BunifuCards1_Click(object sender, EventArgs e)
+        private void AnalistaCard_Paint(object sender, PaintEventArgs e)
         {
-            Form1 res = new Form1();
-            res.Show();
+            
+        }
+
+        private void AdminbdCard_Paint(object sender, PaintEventArgs e)
+        {
+         
+        }
+
+        private void TestingCard_Paint(object sender, PaintEventArgs e)
+        {
+          
+        }
+
+        private void ScrumMasterCard_Paint(object sender, PaintEventArgs e)
+        {
+         
+        }
+
+        private void ReportadorCard_Paint(object sender, PaintEventArgs e)
+        {
+          
+        }
+
+        private void RedesDeComputadorasCard_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void ProjectOwnerCard_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void FrontendCard_Paint(object sender, PaintEventArgs e)
+        {
+         
+        }
+
+        private void ProjectManagerCard_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
