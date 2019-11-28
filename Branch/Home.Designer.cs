@@ -111,11 +111,11 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Comfortaa", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(12, 9);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(72, 25);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(60, 20);
             this.bunifuCustomLabel1.TabIndex = 3;
             this.bunifuCustomLabel1.Text = "Branch";
             // 
@@ -188,7 +188,6 @@
             this.BarraContenedor.Name = "BarraContenedor";
             this.BarraContenedor.Size = new System.Drawing.Size(1134, 611);
             this.BarraContenedor.TabIndex = 8;
-            this.BarraContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraContenedor_Paint);
             // 
             // projectManagerCard
             // 
@@ -206,7 +205,7 @@
             this.projectManagerCard.ShadowDepth = 20;
             this.projectManagerCard.Size = new System.Drawing.Size(232, 138);
             this.projectManagerCard.TabIndex = 34;
-            this.projectManagerCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ProjectManagerCard_Paint);
+            this.projectManagerCard.Click += new System.EventHandler(this.projectManagerCard_Click);
             // 
             // frontendCard
             // 
@@ -224,7 +223,7 @@
             this.frontendCard.ShadowDepth = 20;
             this.frontendCard.Size = new System.Drawing.Size(232, 138);
             this.frontendCard.TabIndex = 34;
-            this.frontendCard.Paint += new System.Windows.Forms.PaintEventHandler(this.FrontendCard_Paint);
+            this.frontendCard.Click += new System.EventHandler(this.frontendCard_Click);
             // 
             // reportadorCard
             // 
@@ -242,7 +241,7 @@
             this.reportadorCard.ShadowDepth = 20;
             this.reportadorCard.Size = new System.Drawing.Size(232, 138);
             this.reportadorCard.TabIndex = 33;
-            this.reportadorCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ReportadorCard_Paint);
+            this.reportadorCard.Click += new System.EventHandler(this.reportadorCard_Click);
             // 
             // projectOwnerCard
             // 
@@ -260,7 +259,7 @@
             this.projectOwnerCard.ShadowDepth = 20;
             this.projectOwnerCard.Size = new System.Drawing.Size(232, 138);
             this.projectOwnerCard.TabIndex = 34;
-            this.projectOwnerCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ProjectOwnerCard_Paint);
+            this.projectOwnerCard.Click += new System.EventHandler(this.projectOwnerCard_Click);
             // 
             // analistaCard
             // 
@@ -278,7 +277,7 @@
             this.analistaCard.ShadowDepth = 20;
             this.analistaCard.Size = new System.Drawing.Size(232, 138);
             this.analistaCard.TabIndex = 32;
-            this.analistaCard.Paint += new System.Windows.Forms.PaintEventHandler(this.AnalistaCard_Paint);
+            this.analistaCard.Click += new System.EventHandler(this.analistaCard_Click);
             // 
             // scrumMasterCard
             // 
@@ -296,7 +295,7 @@
             this.scrumMasterCard.ShadowDepth = 20;
             this.scrumMasterCard.Size = new System.Drawing.Size(232, 138);
             this.scrumMasterCard.TabIndex = 33;
-            this.scrumMasterCard.Paint += new System.Windows.Forms.PaintEventHandler(this.ScrumMasterCard_Paint);
+            this.scrumMasterCard.Click += new System.EventHandler(this.scrumMasterCard_Click);
             // 
             // backendCard
             // 
@@ -314,7 +313,7 @@
             this.backendCard.ShadowDepth = 20;
             this.backendCard.Size = new System.Drawing.Size(232, 138);
             this.backendCard.TabIndex = 32;
-            this.backendCard.Paint += new System.Windows.Forms.PaintEventHandler(this.BackendCard_Paint);
+            this.backendCard.Click += new System.EventHandler(this.backendCard_Click);
             // 
             // redesDeComputadorasCard
             // 
@@ -332,7 +331,7 @@
             this.redesDeComputadorasCard.ShadowDepth = 20;
             this.redesDeComputadorasCard.Size = new System.Drawing.Size(232, 138);
             this.redesDeComputadorasCard.TabIndex = 31;
-            this.redesDeComputadorasCard.Paint += new System.Windows.Forms.PaintEventHandler(this.RedesDeComputadorasCard_Paint);
+            this.redesDeComputadorasCard.Click += new System.EventHandler(this.redesDeComputadorasCard_Click);
             // 
             // testingCard
             // 
@@ -350,7 +349,7 @@
             this.testingCard.ShadowDepth = 20;
             this.testingCard.Size = new System.Drawing.Size(232, 138);
             this.testingCard.TabIndex = 33;
-            this.testingCard.Paint += new System.Windows.Forms.PaintEventHandler(this.TestingCard_Paint);
+            this.testingCard.Click += new System.EventHandler(this.testingCard_Click);
             // 
             // documentadorCard
             // 
@@ -368,7 +367,7 @@
             this.documentadorCard.ShadowDepth = 20;
             this.documentadorCard.Size = new System.Drawing.Size(232, 138);
             this.documentadorCard.TabIndex = 32;
-            this.documentadorCard.Paint += new System.Windows.Forms.PaintEventHandler(this.DocumentadorCard_Paint);
+            this.documentadorCard.Click += new System.EventHandler(this.documentadorCard_Click);
             // 
             // adminbdCard
             // 
@@ -386,7 +385,7 @@
             this.adminbdCard.ShadowDepth = 20;
             this.adminbdCard.Size = new System.Drawing.Size(232, 138);
             this.adminbdCard.TabIndex = 31;
-            this.adminbdCard.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminbdCard_Paint);
+            this.adminbdCard.Click += new System.EventHandler(this.adminbdCard_Click);
             // 
             // calidadCard
             // 
@@ -404,16 +403,16 @@
             this.calidadCard.ShadowDepth = 20;
             this.calidadCard.Size = new System.Drawing.Size(232, 138);
             this.calidadCard.TabIndex = 30;
-            this.calidadCard.Paint += new System.Windows.Forms.PaintEventHandler(this.CalidadCard_Paint);
+            this.calidadCard.Click += new System.EventHandler(this.calidadCard_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comfortaa", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(329, 33);
+            this.label1.Size = new System.Drawing.Size(320, 25);
             this.label1.TabIndex = 29;
             this.label1.Text = "Selecciona la área de interes";
             // 

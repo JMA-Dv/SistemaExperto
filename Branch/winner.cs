@@ -13,9 +13,12 @@ namespace Branch
 {
     public partial class winner : Form
     {
-        public winner()
+        
+        public winner(string ganador)
         {
+
             InitializeComponent();
+            nombreGanador.Text = ganador;
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();

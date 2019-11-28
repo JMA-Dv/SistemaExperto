@@ -17,6 +17,8 @@ namespace Branch
         public Form3()
         {
             InitializeComponent();
+            unableButtons();
+            invisiblecomponents();
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -29,25 +31,170 @@ namespace Branch
         {
             this.Close();
         }
+        public void materiasABD(List<string> materias) 
+        {
+            unableButtons();
+            invisiblecomponents();
+            MatesDiscretas.Visible = true;
+            Poo.Visible = true;
+            SistemasOperativos.Visible = true;
+            FundamentosBD.Visible = true;
+            AdminBD.Visible = true;
+            ProgramacionDB.Visible = true;
+            BDmoviles.Visible = true;
+        }
+        public void materiasCalidad(List<string> materias)
+        {
+            invisiblecomponents();
+
+            FundamentosProgram.Visible = true;
+            SistemasOperativos.Visible = true;
+            TallerSO.Visible = true;
+            TAP.Visible = true;
+            FundamentosIS.Visible = true;
+            GPS.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+        }
+
+        public void materiasFrontend()
+        {
+            invisiblecomponents();
+            MatesDiscretas.Visible = true;
+            Graficacion.Visible = true;
+            SistemasOperativos.Visible = true;
+            TallerSO.Visible = true;
+            FundamentosIS.Visible = true;
+            GPS.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+
+        }
+
+        public void materiasBackend()
+        {
+            invisiblecomponents();
+            Poo.Visible = true;
+            LenguajesAutomatas.Visible = true;
+            LenguajesAutomatas2.Visible = true;
+            FundamentosBD.Visible = true;
+            BDmoviles.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+            EstructuraDatos.Visible = true;
+        }
+        public void materiasAnalista()
+        {
+            invisiblecomponents();
+            FundamentosIS.Visible = true;
+            GPS.Visible = true;
+            MatesDiscretas.Visible = true;
+            FundamentosProgram.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+            FundamentosBD.Visible = true;
+        }
+        public void materiasRedes()
+        {
+            invisiblecomponents();
+            SistemasOperativos.Visible = true;
+            TallerSO.Visible = true;
+            Telecom.Visible = true;
+            ArquitecturaComputadoras.Visible = true;
+            RedesComputadoras.Visible = true;
+            ConmutacionRedes.Visible = true;
+            AdminRedes.Visible = true;
+            AdminServidores.Visible = true;
+
+        }
+        public void invisiblecomponents()
+        {
+            AdminBD.Visible = false;
+            MatesDiscretas.Visible = false;
+            AdminRedes.Visible = false;
+            ArquitecturaComputadoras.Visible = false;
+            AdminServidores.Visible = false;
+            BDmoviles.Visible = false;
+            ConmutacionRedes.Visible = false;
+            EstructuraDatos.Visible = false;
+            FundamentosProgram.Visible = false;
+            Poo.Visible = false;
+            SistemasOperativos.Visible = false;
+            FundamentosBD.Visible = false;
+            TallerSO.Visible = false;
+            Telecom.Visible = false;
+            BDmoviles.Visible = false;
+            TallerInvestigacion.Visible = false;
+            TallerInvestigacion2.Visible = false;
+            Prolog.Visible = false;
+            ProgramacionDB.Visible = false;
+            ProgramacionWeb.Visible = false;
+            GPS.Visible = false;
+            FundamentosIS.Visible = false;
+            Graficacion.Visible = false;
+            RedesComputadoras.Visible = false;
+            SistemasProgramables.Visible = false;
+            LenguajesAutomatas.Visible = false;
+            LenguajesAutomatas2.Visible = false;
+            IA.Visible = false;
+
+        }
+        public void unableButtons()
+        {
+            AdminBD.Enabled = false;
+            MatesDiscretas.Enabled = false;
+            AdminRedes.Enabled = false;
+            ArquitecturaComputadoras.Enabled = false;
+            AdminServidores.Enabled = false;
+            BDmoviles.Enabled = false;
+            ConmutacionRedes.Enabled = false;
+            EstructuraDatos.Enabled = false;
+            FundamentosProgram.Enabled = false;
+            Poo.Enabled = false;
+            SistemasOperativos.Enabled = false;
+            FundamentosBD.Enabled = false;
+            TallerSO.Enabled = false;
+            Telecom.Enabled = false;
+            BDmoviles.Enabled = false;
+            TallerInvestigacion.Enabled = false;
+            TallerInvestigacion2.Enabled = false;
+            Prolog.Enabled = false;
+            ProgramacionDB.Enabled = false;
+            ProgramacionWeb.Enabled = false;
+            GPS.Enabled = false;
+            FundamentosIS.Enabled = false;
+            Graficacion.Enabled = false;
+            RedesComputadoras.Enabled = false;
+            SistemasProgramables.Enabled = false;
+            LenguajesAutomatas.Enabled = false;
+            LenguajesAutomatas2.Enabled = false;
+            IA.Enabled = false;
+        }
+
 
         private void AdminBD_CheckedChanged(object sender, EventArgs e)
         {
             if(contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                AdminBD.Checked = false;
             }
             else
             {
-                contador++;
+                if (AdminBD.Checked == true)
+                {
+                    contador++;
+                    AdminBD.BackColor = Color.FromArgb(0, 255, 127);
+                }
+                else
+                {
+                    contador--;
+                    AdminBD.BackColor = Color.Black;
+
+                }
+
             }
-            if(AdminBD.Checked == true)
-            {
-                AdminBD.BackColor = Color.FromArgb(0,255,127);
-            }
-            else
-            {
-                AdminBD.BackColor = Color.Black;
-            }
+            
         }
 
         private void AdminRedes_CheckedChanged(object sender, EventArgs e)
@@ -55,19 +202,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                AdminRedes.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (AdminRedes.Checked == true)
+                {
+                    AdminRedes.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    AdminRedes.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (AdminRedes.Checked == true)
-            {
-                AdminRedes.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                AdminRedes.BackColor = Color.Black;
-            }
+            
         }
 
         private void AdminServidores_CheckedChanged(object sender, EventArgs e)
@@ -75,19 +226,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                AdminServidores.Checked = false;
             }
             else
             {
-                contador++;
+                if (AdminServidores.Checked == true)
+                {
+                    AdminServidores.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    AdminServidores.BackColor = Color.Black;
+                    contador--;
+                }
+
             }
-            if (AdminServidores.Checked == true)
-            {
-                AdminServidores.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                AdminServidores.BackColor = Color.Black;
-            }
+            
         }
 
         private void ArquitecturaComputadoras_CheckedChanged(object sender, EventArgs e)
@@ -95,19 +250,22 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                ArquitecturaComputadoras.Checked = false;
             }
             else
             {
-                contador++;
+                if (ArquitecturaComputadoras.Checked == true)
+                {
+                    ArquitecturaComputadoras.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    ArquitecturaComputadoras.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (ArquitecturaComputadoras.Checked == true)
-            {
-                ArquitecturaComputadoras.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                ArquitecturaComputadoras.BackColor = Color.Black;
-            }
+            
         }
 
         private void BDmoviles_CheckedChanged(object sender, EventArgs e)
@@ -115,19 +273,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                BDmoviles.Checked = false;
             }
             else
             {
-                contador++;
+                if (BDmoviles.Checked == true)
+                {
+                    BDmoviles.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    BDmoviles.BackColor = Color.Black;
+                    contador--;
+                }
+
             }
-            if (BDmoviles.Checked == true)
-            {
-                BDmoviles.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                BDmoviles.BackColor = Color.Black;
-            }
+            
         }
 
         private void ConmutacionRedes_CheckedChanged(object sender, EventArgs e)
@@ -135,19 +297,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                ConmutacionRedes.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (ConmutacionRedes.Checked == true)
+                {
+                    ConmutacionRedes.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    ConmutacionRedes.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (ConmutacionRedes.Checked == true)
-            {
-                ConmutacionRedes.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                ConmutacionRedes.BackColor = Color.Black;
-            }
+            
         }
 
         private void EstructuraDatos_CheckedChanged(object sender, EventArgs e)
@@ -155,19 +321,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                EstructuraDatos.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (EstructuraDatos.Checked == true)
+                {
+                    EstructuraDatos.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    EstructuraDatos.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (EstructuraDatos.Checked == true)
-            {
-                EstructuraDatos.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                EstructuraDatos.BackColor = Color.Black;
-            }
+            
         }
 
         private void FundamentosBD_CheckedChanged(object sender, EventArgs e)
@@ -175,19 +345,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                FundamentosBD.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (FundamentosBD.Checked == true)
+                {
+                    FundamentosBD.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    FundamentosBD.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (FundamentosBD.Checked == true)
-            {
-                FundamentosBD.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                FundamentosBD.BackColor = Color.Black;
-            }
+            
         }
 
         private void FundamentosIS_CheckedChanged(object sender, EventArgs e)
@@ -195,19 +369,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                FundamentosIS.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (FundamentosIS.Checked == true)
+                {
+                    FundamentosIS.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    FundamentosIS.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (FundamentosIS.Checked == true)
-            {
-                FundamentosIS.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                FundamentosIS.BackColor = Color.Black;
-            }
+            
         }
 
         private void FundamentosProgram_CheckedChanged(object sender, EventArgs e)
@@ -215,19 +393,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                FundamentosProgram.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (FundamentosProgram.Checked == true)
+                {
+                    FundamentosProgram.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    FundamentosProgram.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (FundamentosProgram.Checked == true)
-            {
-                FundamentosProgram.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                FundamentosProgram.BackColor = Color.Black;
-            }
+            
         }
 
         private void GPS_CheckedChanged(object sender, EventArgs e)
@@ -235,19 +417,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                GPS.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (GPS.Checked == true)
+                {
+                    GPS.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    GPS.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (GPS.Checked == true)
-            {
-                GPS.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                GPS.BackColor = Color.Black;
-            }
+            
         }
 
         private void Graficacion_CheckedChanged(object sender, EventArgs e)
@@ -255,19 +441,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                Graficacion.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (Graficacion.Checked == true)
+                {
+                    Graficacion.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    Graficacion.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (Graficacion.Checked == true)
-            {
-                Graficacion.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                Graficacion.BackColor = Color.Black;
-            }
+            
         }
 
         private void IA_CheckedChanged(object sender, EventArgs e)
@@ -275,19 +465,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                IA.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (IA.Checked == true)
+                {
+                    IA.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    IA.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (IA.Checked == true)
-            {
-                IA.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                IA.BackColor = Color.Black;
-            }
+            
         }
 
         private void LenguajesInterfaz_CheckedChanged(object sender, EventArgs e)
@@ -295,19 +489,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                LenguajesInterfaz.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (LenguajesInterfaz.Checked == true)
+                {
+                    LenguajesInterfaz.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    LenguajesInterfaz.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (LenguajesInterfaz.Checked == true)
-            {
-                LenguajesInterfaz.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                LenguajesInterfaz.BackColor = Color.Black;
-            }
+            
         }
 
         private void LenguajesAutomatas_CheckedChanged(object sender, EventArgs e)
@@ -315,19 +513,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                LenguajesAutomatas.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (LenguajesAutomatas.Checked == true)
+                {
+                    LenguajesAutomatas.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    LenguajesAutomatas.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (LenguajesAutomatas.Checked == true)
-            {
-                LenguajesAutomatas.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                LenguajesAutomatas.BackColor = Color.Black;
-            }
+            
         }
 
         private void MatesDiscretas_CheckedChanged(object sender, EventArgs e)
@@ -335,19 +537,24 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+
+                MatesDiscretas.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (MatesDiscretas.Checked == true)
+                {
+                    MatesDiscretas.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    MatesDiscretas.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (MatesDiscretas.Checked == true)
-            {
-                MatesDiscretas.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                MatesDiscretas.BackColor = Color.Black;
-            }
+            
         }
 
         private void Poo_CheckedChanged(object sender, EventArgs e)
@@ -355,19 +562,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                Poo.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (Poo.Checked == true)
+                {
+                    Poo.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    Poo.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (Poo.Checked == true)
-            {
-                Poo.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                Poo.BackColor = Color.Black;
-            }
+            
         }
 
         private void ProgramacionDB_CheckedChanged(object sender, EventArgs e)
@@ -375,19 +586,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                ProgramacionDB.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (ProgramacionDB.Checked == true)
+                {
+                    ProgramacionDB.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    ProgramacionDB.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (ProgramacionDB.Checked == true)
-            {
-                ProgramacionDB.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                ProgramacionDB.BackColor = Color.Black;
-            }
+            
         }
 
         private void LenguajesAutomatas2_CheckedChanged(object sender, EventArgs e)
@@ -395,19 +610,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                LenguajesAutomatas2.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (LenguajesAutomatas2.Checked == true)
+                {
+                    LenguajesAutomatas2.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    LenguajesAutomatas2.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (LenguajesAutomatas2.Checked == true)
-            {
-                LenguajesAutomatas2.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                LenguajesAutomatas2.BackColor = Color.Black;
-            }
+            
         }
 
         private void Prolog_CheckedChanged(object sender, EventArgs e)
@@ -415,19 +634,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                Prolog.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (Prolog.Checked == true)
+                {
+                    Prolog.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    Prolog.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (Prolog.Checked == true)
-            {
-                Prolog.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                Prolog.BackColor = Color.Black;
-            }
+            
         }
 
         private void ProgramacionWeb_CheckedChanged(object sender, EventArgs e)
@@ -435,19 +658,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                ProgramacionWeb.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (ProgramacionWeb.Checked == true)
+                {
+                    ProgramacionWeb.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    ProgramacionWeb.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (ProgramacionWeb.Checked == true)
-            {
-                ProgramacionWeb.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                ProgramacionWeb.BackColor = Color.Black;
-            }
+            
         }
 
         private void RedesComputadoras_CheckedChanged(object sender, EventArgs e)
@@ -455,19 +682,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                RedesComputadoras.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (RedesComputadoras.Checked == true)
+                {
+                    RedesComputadoras.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    RedesComputadoras.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (RedesComputadoras.Checked == true)
-            {
-                RedesComputadoras.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                RedesComputadoras.BackColor = Color.Black;
-            }
+            
         }
 
         private void SistemasProgramables_CheckedChanged(object sender, EventArgs e)
@@ -475,19 +706,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                SistemasProgramables.Checked = false; 
             }
             else
             {
-                contador++;
+                
+                if (SistemasProgramables.Checked == true)
+                {
+                    SistemasProgramables.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    SistemasProgramables.BackColor = Color.Black;
+                    contador++;
+                }
             }
-            if (SistemasProgramables.Checked == true)
-            {
-                SistemasProgramables.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                SistemasProgramables.BackColor = Color.Black;
-            }
+            
         }
 
         private void SistemasOperativos_CheckedChanged(object sender, EventArgs e)
@@ -495,19 +730,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                SistemasOperativos.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (SistemasOperativos.Checked == true)
+                {
+                    SistemasOperativos.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    SistemasOperativos.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (SistemasOperativos.Checked == true)
-            {
-                SistemasOperativos.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                SistemasOperativos.BackColor = Color.Black;
-            }
+            
         }
 
         private void TallerInvestigacion_CheckedChanged(object sender, EventArgs e)
@@ -515,19 +754,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                TallerInvestigacion.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (TallerInvestigacion.Checked == true)
+                {
+                    TallerInvestigacion.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    TallerInvestigacion.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (TallerInvestigacion.Checked == true)
-            {
-                TallerInvestigacion.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                TallerInvestigacion.BackColor = Color.Black;
-            }
+            
         }
 
         private void TallerInvestigacion2_CheckedChanged(object sender, EventArgs e)
@@ -535,19 +778,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                TallerInvestigacion2.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (TallerInvestigacion2.Checked == true)
+                {
+                    TallerInvestigacion2.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    TallerInvestigacion2.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (TallerInvestigacion2.Checked == true)
-            {
-                TallerInvestigacion2.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                TallerInvestigacion2.BackColor = Color.Black;
-            }
+            
         }
 
         private void TallerSO_CheckedChanged(object sender, EventArgs e)
@@ -555,19 +802,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                TallerSO.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (TallerSO.Checked == true)
+                {
+                    TallerSO.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    TallerSO.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (TallerSO.Checked == true)
-            {
-                TallerSO.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                TallerSO.BackColor = Color.Black;
-            }
+            
         }
 
         private void TAP_CheckedChanged(object sender, EventArgs e)
@@ -575,19 +826,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                TAP.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (TAP.Checked == true)
+                {
+                    TAP.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    TAP.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (TAP.Checked == true)
-            {
-                TAP.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                TAP.BackColor = Color.Black;
-            }
+            
         }
 
         private void Telecom_CheckedChanged(object sender, EventArgs e)
@@ -595,19 +850,23 @@ namespace Branch
             if (contador > 8)
             {
                 MessageBox.Show("Materias seleccionadas al limite");
+                Telecom.Checked = false;
             }
             else
             {
-                contador++;
+                
+                if (Telecom.Checked == true)
+                {
+                    Telecom.BackColor = Color.FromArgb(0, 255, 127);
+                    contador++;
+                }
+                else
+                {
+                    Telecom.BackColor = Color.Black;
+                    contador--;
+                }
             }
-            if (Telecom.Checked == true)
-            {
-                Telecom.BackColor = Color.FromArgb(0, 255, 127);
-            }
-            else
-            {
-                Telecom.BackColor = Color.Black;
-            }
+            
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)

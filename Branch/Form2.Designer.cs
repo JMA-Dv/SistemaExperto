@@ -54,7 +54,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1430, 129);
+            this.panel1.Size = new System.Drawing.Size(1200, 129);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             // 
@@ -103,7 +103,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(0, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -113,9 +113,9 @@
             this.areaPorMateria.FlatAppearance.BorderSize = 0;
             this.areaPorMateria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.areaPorMateria.Image = ((System.Drawing.Image)(resources.GetObject("areaPorMateria.Image")));
-            this.areaPorMateria.Location = new System.Drawing.Point(22, 213);
+            this.areaPorMateria.Location = new System.Drawing.Point(12, 226);
             this.areaPorMateria.Name = "areaPorMateria";
-            this.areaPorMateria.Size = new System.Drawing.Size(418, 449);
+            this.areaPorMateria.Size = new System.Drawing.Size(336, 350);
             this.areaPorMateria.TabIndex = 1;
             this.areaPorMateria.UseVisualStyleBackColor = true;
             this.areaPorMateria.Click += new System.EventHandler(this.AreaPorMateria_Click);
@@ -125,9 +125,9 @@
             this.materiaPorArea.FlatAppearance.BorderSize = 0;
             this.materiaPorArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.materiaPorArea.Image = ((System.Drawing.Image)(resources.GetObject("materiaPorArea.Image")));
-            this.materiaPorArea.Location = new System.Drawing.Point(488, 135);
+            this.materiaPorArea.Location = new System.Drawing.Point(436, 135);
             this.materiaPorArea.Name = "materiaPorArea";
-            this.materiaPorArea.Size = new System.Drawing.Size(468, 467);
+            this.materiaPorArea.Size = new System.Drawing.Size(353, 342);
             this.materiaPorArea.TabIndex = 2;
             this.materiaPorArea.UseVisualStyleBackColor = true;
             this.materiaPorArea.Click += new System.EventHandler(this.MateriaPorArea_Click);
@@ -137,9 +137,9 @@
             this.Minijuego.FlatAppearance.BorderSize = 0;
             this.Minijuego.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Minijuego.Image = ((System.Drawing.Image)(resources.GetObject("Minijuego.Image")));
-            this.Minijuego.Location = new System.Drawing.Point(983, 213);
+            this.Minijuego.Location = new System.Drawing.Point(843, 230);
             this.Minijuego.Name = "Minijuego";
-            this.Minijuego.Size = new System.Drawing.Size(433, 454);
+            this.Minijuego.Size = new System.Drawing.Size(334, 346);
             this.Minijuego.TabIndex = 3;
             this.Minijuego.UseVisualStyleBackColor = true;
             this.Minijuego.Click += new System.EventHandler(this.Minijuego_Click);
@@ -148,9 +148,9 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 668);
+            this.panel2.Location = new System.Drawing.Point(0, 657);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1430, 43);
+            this.panel2.Size = new System.Drawing.Size(1200, 43);
             this.panel2.TabIndex = 4;
             // 
             // bunifuElipse1
@@ -162,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1430, 711);
+            this.ClientSize = new System.Drawing.Size(1200, 700);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Minijuego);
             this.Controls.Add(this.materiaPorArea);

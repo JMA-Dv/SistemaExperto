@@ -37,11 +37,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("\"Call Me\", (Maybe)?", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(355, 163);
+            this.label1.Location = new System.Drawing.Point(299, 166);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 121);
+            this.label1.Size = new System.Drawing.Size(291, 73);
             this.label1.TabIndex = 0;
             this.label1.Text = "WINNER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -52,7 +52,7 @@
             this.nombreGanador.BackColor = System.Drawing.Color.Transparent;
             this.nombreGanador.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreGanador.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.nombreGanador.Location = new System.Drawing.Point(398, 284);
+            this.nombreGanador.Location = new System.Drawing.Point(371, 284);
             this.nombreGanador.Name = "nombreGanador";
             this.nombreGanador.Size = new System.Drawing.Size(120, 50);
             this.nombreGanador.TabIndex = 1;

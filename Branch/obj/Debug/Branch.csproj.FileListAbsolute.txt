@@ -37,3 +37,35 @@ C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.F
 C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form3.resources
 C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.juego.resources
 C:\Users\maryf\Downloads\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.winner.resources
+D:\SistemaExperto-master-vJaquez\Branch\bin\Debug\Branch.exe.config
+D:\SistemaExperto-master-vJaquez\Branch\bin\Debug\Branch.exe
+D:\SistemaExperto-master-vJaquez\Branch\bin\Debug\Branch.pdb
+D:\SistemaExperto-master-vJaquez\Branch\bin\Debug\Bunifu_UI_v1.52.dll
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.csprojAssemblyReference.cache
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form2.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form3.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.juego.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form1.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Home.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Properties.Resources.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.winner.resources
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.csproj.GenerateResource.cache
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.csproj.CopyComplete
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.exe
+D:\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.pdb
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\bin\Debug\Branch.exe.config
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\bin\Debug\Branch.exe
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\bin\Debug\Branch.pdb
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.csprojAssemblyReference.cache
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form2.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form3.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.juego.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Form1.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Home.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.Properties.Resources.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.winner.resources
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.csproj.GenerateResource.cache
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.csproj.CopyComplete
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.exe
+C:\Users\CLARKE\3D Objects\SistemaExperto-master-vJaquez\Branch\obj\Debug\Branch.pdb
