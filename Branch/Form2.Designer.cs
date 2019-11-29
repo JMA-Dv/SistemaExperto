@@ -65,7 +65,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(572, 68);
+            this.label3.Location = new System.Drawing.Point(445, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(312, 25);
             this.label3.TabIndex = 4;
@@ -79,7 +79,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(541, 30);
+            this.label2.Location = new System.Drawing.Point(414, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(389, 22);
             this.label2.TabIndex = 3;
@@ -130,6 +130,7 @@
             this.materiaPorArea.Size = new System.Drawing.Size(353, 342);
             this.materiaPorArea.TabIndex = 2;
             this.materiaPorArea.UseVisualStyleBackColor = true;
+            this.materiaPorArea.Visible = false;
             this.materiaPorArea.Click += new System.EventHandler(this.MateriaPorArea_Click);
             // 
             // Minijuego

@@ -112,6 +112,8 @@ namespace Branch
         private void documentadorCard_Click(object sender, EventArgs e)
         {
             List<string> allSignatures = consulta("locacion(documentador,B,C)");
+            materias.materiasDocumentador(allSignatures);
+            materias.ShowDialog();
             
         }
 
@@ -120,9 +122,6 @@ namespace Branch
             List<string> allSignatures = consulta("locacion(backend,B,C)");
             materias.materiasBackend();
             materias.ShowDialog();
-
-            
-
         }
 
         private void analistaCard_Click(object sender, EventArgs e)
@@ -139,17 +138,19 @@ namespace Branch
             materias.materiasABD(allSignatures);
             materias.ShowDialog();
 
-            PlEngine.PlThreadDestroyEngine();
+            
         }
 
         private void testingCard_Click(object sender, EventArgs e)
         {
             List<string> allSignatures = consulta("locacion(testing,B,C)");
+            
         }
 
         private void scrumMasterCard_Click(object sender, EventArgs e)
         {
             List<string> allSignatures = consulta("locacion(scrum,B,C)");
+            
         }
 
         private void reportadorCard_Click(object sender, EventArgs e)
@@ -160,11 +161,16 @@ namespace Branch
         private void redesDeComputadorasCard_Click(object sender, EventArgs e)
         {
             List<string> allSignatures = consulta("locacion(redes,B,C)");
+            materias.materiasRedes();
+            materias.ShowDialog();
         }
 
         private void projectOwnerCard_Click(object sender, EventArgs e)
         {
             List<string> allSignatures = consulta("locacion(owner,B,C)");
+            materias.materiasOwner();
+            materias.ShowDialog();
+
         }
 
         private void frontendCard_Click(object sender, EventArgs e)
@@ -173,12 +179,12 @@ namespace Branch
             materias.materiasFrontend();
             materias.ShowDialog();
 
-            PlEngine.PlThreadDestroyEngine();
         }
 
         private void projectManagerCard_Click(object sender, EventArgs e)
         {
             List<string> allSignatures = consulta("locacion(manager,B,C)");
+            materias.materiasManager();
         }
     }
 }

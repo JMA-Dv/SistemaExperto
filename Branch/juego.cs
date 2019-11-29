@@ -357,6 +357,10 @@ namespace Branch
             {
                 ganador = "Semestre 4";
             }
+            else if(semestreA==0 ||semestreB==0 || semestreC==0)
+            {
+                ganador = "Empate";
+            }
             else
             {
                 ganador = "Semestre 7";

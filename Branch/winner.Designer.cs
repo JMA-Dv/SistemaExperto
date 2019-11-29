@@ -45,6 +45,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "WINNER";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // nombreGanador
             // 
@@ -71,6 +72,7 @@
             this.Name = "winner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "winner";
+            this.DoubleClick += new System.EventHandler(this.winner_DoubleClick);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Winner_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();

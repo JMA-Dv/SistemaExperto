@@ -8,17 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using SbsSW.SwiPlCs;
 
 namespace Branch
 {
     public partial class Form3 : Form
     {
         int contador = 0;
+        private string[] areas = { "redes" ,"tester","documentador"};
         public Form3()
         {
             InitializeComponent();
-            unableButtons();
-            invisiblecomponents();
+            load();
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -31,7 +33,38 @@ namespace Branch
         {
             this.Close();
         }
-        public void materiasABD(List<string> materias) 
+
+        void load()
+        {
+            try
+            {
+                Environment.SetEnvironmentVariable("SWI_HOME_DIR", @"C:\Program Files (x86)\pl");
+                Environment.SetEnvironmentVariable("Path", @"C:\Program Files (x86)\pl\bin");
+                string[] data = { "-q", "-f", @"branch.pl" };
+                PlEngine.Initialize(data);
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        public List<String> consulta(string context)
+        {
+            List<String> allElements = new List<String>();
+            PlQuery generalConsult = new PlQuery(context);
+            foreach (PlQueryVariables elements in generalConsult.SolutionVariables)
+            {
+                //allElements.Add(elements["A"].ToString());
+                allElements.Add(elements["B"].ToString());
+
+            }
+            PlEngine.PlThreadDestroyEngine();
+
+            return allElements;
+        }
+
+        public void materiasABD(List<string> materias)
         {
             unableButtons();
             invisiblecomponents();
@@ -43,6 +76,53 @@ namespace Branch
             ProgramacionDB.Visible = true;
             BDmoviles.Visible = true;
         }
+
+        public void materiasDocumentador(List<string> materias)
+        {
+            unableButtons();
+            invisiblecomponents();
+            MatesDiscretas.Visible = true;
+            Poo.Visible = true;
+            SistemasOperativos.Visible = true;
+            FundamentosBD.Visible = true;
+            FundamentosIS.Visible = true;
+            GPS.Visible = true;
+            AdminBD.Visible = true;
+            ProgramacionDB.Visible = true;
+            BDmoviles.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+
+        }
+        public void materiasOwner()
+        {
+            unableButtons();
+            invisiblecomponents();
+            FundamentosProgram.Visible = true;
+            GPS.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+            MatesDiscretas.Visible = true;
+            FundamentosProgram.Visible = true;
+            FundamentosBD.Visible = true;
+            FundamentosIS.Visible = true;
+
+        }
+
+        public void materiasManager()
+        {
+            unableButtons();
+            invisiblecomponents();
+            FundamentosProgram.Visible = true;
+            GPS.Visible = true;
+            TallerInvestigacion.Visible = true;
+            TallerInvestigacion2.Visible = true;
+            MatesDiscretas.Visible = true;
+            FundamentosProgram.Visible = true;
+            FundamentosBD.Visible = true;
+            FundamentosIS.Visible = true;
+        }
+
         public void materiasCalidad(List<string> materias)
         {
             invisiblecomponents();
@@ -170,7 +250,6 @@ namespace Branch
             LenguajesAutomatas2.Enabled = false;
             IA.Enabled = false;
         }
-
 
         private void AdminBD_CheckedChanged(object sender, EventArgs e)
         {
